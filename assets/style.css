@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Tiro Bangla', serif;
+
+}
+
+.login-container {
+    height: 100vh;
+}
+
+.login-background {
+    background-color: #d1e3ff;
+
+}
+
+.login-form {
+    height: 60vh;
+    width: 75vw;
+    border: white;
+    border-radius: 10px;
+
+}

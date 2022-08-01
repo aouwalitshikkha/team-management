@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+            integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+
+        <link rel="stylesheet" href="assets/style.css">
+
+
+        <title>আমার অসম্পাদিত কাজের লিস্ট</title>
+
+    </head>
+
+    <body class="bg-light">
+        <header class="p-3 bg-dark text-white">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                        <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap">
+                            <use xlink:href="#bootstrap"></use>
+                        </svg>
+                    </a>
+
+                    <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                        <li><a href="#" class="nav-link px-2 text-white">My Logo</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </header>
+
+        <!-- header ends -->
+        <div class="container">
+
+            <div class="row py-5 g-4">
+                <div class="col-3">
+                    <div class="d-flex flex-column flex-shrink-0 p-3 bg-light" style="width: 280px;">
+                        <ul class="nav nav-pills flex-column mb-auto">
+                            <li class="nav-item">
+                                <a href="profile.html" class="nav-link link-dark">
+                                    <i class=" pe-3 fa-solid  fa-user"></i>
+                                    Profile
+                                </a>
+                            </li>
+                            <li>
+                                <a href="submit.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-list-check"></i> Submit Task
+                                </a>
+                            </li>
+                            <li>
+                                <a href="score.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-heart-circle-plus"></i>Your Score
+                                </a>
+                            </li>
+                            <li>
+                                <a href="completed.html" class="nav-link link-dark">
+                                    <i class="fa-solid pe-3 fa-bars-progress"></i>Completed Task
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="passchange.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-lock-open"></i>Change Password
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="todo.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-hourglass"></i> Needs to do
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="myqueue.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-spinner"></i>My Queue
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="point.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-coins"></i>Points system
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="invoice.html" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-file-invoice-dollar"></i>Invoices
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="nav-link link-dark">
+                                    <i class="pe-3 fa-solid fa-right-from-bracket"></i>Sign Out
+                                </a>
+                            </li>
+
+                        </ul>
+
+
+                    </div>
+                </div>
+
+                <div class="col-9 p-3">
+                    <div class="container ">
+                        <div class="d-flex justify-content-between">
+                            <h2 class="text-uppercase h4"><i class="pe-3 fa-solid fa-microchip"></i>যা যা শেষ করতে হবে
+                            </h2>
+
+                            </h2>
+                        </div>
+                        <hr>
+
+                        <div class="profile_container container border p-3">
+
+                            <div class="alert alert-warning  align-items-center" role="alert">
+                                <div>
+                                    <p><i class="pe-3 fa-solid fa-circle-xmark"></i>URL:<span
+                                            class="url__edit ps-3">https://www.facebook.com</span></p>
+                                    <p><i class="pe-3 fa-solid fa-circle-xmark"></i>What needs to do </p>
+                                    <p><i class="pe-3 fa-solid fa-circle-xmark"></i>05 Reward Point</p>
+                                </div>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">
+                                    শেষ করে সাবমিট
+                                </button>
+
+                                <button type="button" class="btn btn-danger" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal2">
+                                    নাহ ! আমি পারতেছি না
+                                </button>
+
+                                <!-- Modal -->
+                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                    aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">কাজ সাবমিট করুন </h5>
+                                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="form-floating mb-3">
+                                                    <input type="url" class="form-control" id="floatingInput"
+                                                        placeholder="https://thepersonage.com">
+                                                    <label for="floatingInput">ইউ আর এল </label>
+                                                </div>
+                                                <div class="form-floating mb-3">
+                                                    <textarea name="notes" class="form-control"
+                                                        style="height: 120px"></textarea>
+                                                    <label for="floatingPassword">কি কি করা হয়েছে </label>
+                                                </div>
+
+                                                <input type="submit" value="Submit" class="mb-3 btn btn-primary">
+                                                </form>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close</button>
+                                                <button type="button" class="btn btn-primary">Submit Task</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Modal Ends -->
+
+
+
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+
+
+
+        <script src="assets/apps.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+            crossorigin="anonymous"></script>
+
+
+    </body>
+
+</html>

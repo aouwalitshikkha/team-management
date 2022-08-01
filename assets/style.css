@@ -18,8 +18,8 @@ body {
 }
 
 .login-form {
-    height: 45vh;
-    width: 75vw;
+    height: 75;
+    width: 100%;
     border: white;
     border-radius: 10px;
 

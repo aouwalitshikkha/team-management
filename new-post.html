@@ -15,13 +15,11 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="assets/style.css">
-
 
         <link rel="stylesheet" href="assets/style.css">
 
 
-        <title>যেই কাজ গুলা করা হয়েছে</title>
+        <title>Your Profile Information</title>
 
     </head>
 
@@ -36,7 +34,7 @@
                     </a>
 
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-links px-2 text-white">লোগো</a></li>
+                        <li><a href="#" class="nav-links text-decoration-none px-2 text-white">My Logo</a></li>
                     </ul>
 
                 </div>
@@ -67,7 +65,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="new-post.html" class="nav-link link-dark">
+                                        <a href="new.html" class="nav-link link-dark">
                                             <i class="pe-3 fa-solid fa-arrow-up-right-from-square"></i>
                                             নতুন পোষ্ট
                                         </a>
@@ -133,49 +131,79 @@
                     <!-- Nav Tag ends -->
 
                 </div>
-
-                <div class="col-9 p-3">
-                    <div class="container ">
+                <div class="col-lg-9 col-md-12 col-sm-12 py-3">
+                    <div class="container-fluid">
                         <div class="d-flex justify-content-between">
-                            <h2 class="text-uppercase h4"><i class="pe-3 fa-solid fa-rectangle-list"></i> সবার সকল কাজের
-                                লিস্ট</h2>
-
+                            <h2 class="text-uppercase h4"><i class="pe-3 fa-solid fa-address-card"></i>My Profile</h2>
+                            <h2 class="text-uppercase h6"> <a class="text-danger text-decoration-none" href=""> <i
+                                        class="pe-3 fa-solid fa-pen-to-square"></i>সম্পাদনা করুন</a>
                             </h2>
                         </div>
                         <hr>
 
-                        <div class="profile_container container p-3">
-                            <table class="table table-striped">
-                                <thead>
-                                    <tr>
-                                        <th>ইউ আর এল</th>
-                                        <th>তারিখ</th>
-                                        <th>সম্পাদনকারী</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td>http://127.0.0.1:5500/submit.html</td>
-                                        <td>01 Sep 2020, 01.09 PM</td>
-                                        <td>Arup</td>
-                                    </tr>
-                                    <tr>
-                                        <td>http://127.0.0.1:5500/submit.html</td>
-                                        <td>01 Sep 2020, 01.09 PM</td>
-                                        <td>Jibon</td>
-                                    </tr>
-                                    <tr>
-                                        <td>http://127.0.0.1:5500/submit.html</td>
-                                        <td>01 Sep 2020, 01.09 PM</td>
-                                        <td>Sunny</td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                        <div class="profile_container container-fluid p-3 p-md-2">
+                            <div class="row g-5 g-md-3 g-sm-1">
+                                <div
+                                    class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
+                                    <img src="https://picsum.photos/200" alt="" class="img-thumbnail rounded-circle">
+                                </div>
+                                <div class="col-lg-8 col-md-12 col-sm-12">
 
+                                    <table class="table table-striped ">
+
+                                        <tr>
+                                            <td scope="row"><strong>নাম</strong></strong></td>
+                                            <td>:</td>
+                                            <td>Sajjad Sunny</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><strong>ঠিকানা</strong></td>
+                                            <td>:</td>
+                                            <td>Baluchara Hathazari Road Chittagong</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><strong>ইমেইল</strong></td>
+                                            <td>:</td>
+                                            <td>aouwalcmc@gmail.com</td>
+                                        </tr>
+
+
+                                        <tr>
+                                            <td><strong>বিকাশ নং</strong></td>
+                                            <td>:</td>
+                                            <td>01790007709</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td><strong>নগদ নং</strong></td>
+                                            <td>:</td>
+                                            <td>01790007709</td>
+                                        </tr>
+                                        <tr class="">
+                                            <td><strong>ব্যাংক ডিটেইলস</strong></td>
+                                            <td>:</td>
+                                            <td>Branch - Baluchara Branch <br>
+                                                Bank Name - Prime Bank Limited <br>
+                                                Account No - 0213512485124 <br>
+                                                Account Holder - Shuvo Shaha
+                                            </td>
+                                        </tr>
+                                    </table>
+                                    <p class="text-muted">সর্বশেষ লগিন করেছেনঃ <span class="text-danger">12
+                                            September 2020</span> </p>
+
+                                </div>
+
+                            </div>
 
                         </div>
 
                     </div>
+
+
 
 
                 </div>
@@ -187,10 +215,15 @@
 
 
 
+
+
         <script src="assets/apps.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"></script>
+
+
+
 
 
     </body>

@@ -19,7 +19,7 @@
         <link rel="stylesheet" href="assets/style.css">
 
 
-        <title>Your Profile Information</title>
+        <title>নতুন পোষ্ট করুন </title>
 
     </head>
 
@@ -44,7 +44,7 @@
         <!-- header ends -->
         <div class="container">
 
-            <div class="row py-lg-5 py-md-3 g-5">
+            <div class="row py-lg-5 py-md-3 g-4">
                 <div class="col-lg-3 col-md-12 col-sm-12">
 
                     <nav class="navbar navbar-expand-lg bg-light">
@@ -65,7 +65,7 @@
                                         </a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="new.html" class="nav-link link-dark">
+                                        <a href="new-post.html" class="nav-link link-dark">
                                             <i class="pe-3 fa-solid fa-arrow-up-right-from-square"></i>
                                             নতুন পোষ্ট
                                         </a>
@@ -131,79 +131,197 @@
                     <!-- Nav Tag ends -->
 
                 </div>
+
                 <div class="col-lg-9 col-md-12 col-sm-12 py-3">
-                    <div class="container-fluid">
-                        <div class="d-flex justify-content-between">
-                            <h2 class="text-uppercase h4"><i class="pe-3 fa-solid fa-address-card"></i>My Profile</h2>
-                            <h2 class="text-uppercase h6"> <a class="text-danger text-decoration-none" href=""> <i
-                                        class="pe-3 fa-solid fa-pen-to-square"></i>সম্পাদনা করুন</a>
+                    <div class=" container border py-3 ">
+                        <div class=" d-flex justify-content-between">
+                            <h2 class="text-uppercase h4"><i class="pe-3 fa-solid fa-upload"></i></i> নতুন পোষ্টের জন্য
+                                ডাটা </h2>
                             </h2>
                         </div>
                         <hr>
 
-                        <div class="profile_container container-fluid p-3 p-md-2">
-                            <div class="row g-5 g-md-3 g-sm-1">
-                                <div
-                                    class="col-lg-4 col-md-12 col-sm-12 d-flex align-items-center justify-content-center">
-                                    <img src="https://picsum.photos/200" alt="" class="img-thumbnail rounded-circle">
+                        <div class="container">
+                            <form id="form">
+
+                                <!-- First Row  -->
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <select name="gender" required id="gender" class="form-control">
+                                            <option value="">Select Gender</option>
+                                            <option value="Female">Female</option>
+                                            <option value="Male">Male</option>
+                                            <option value="She Male">She Male</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" required name="full_name"
+                                            placeholder="Full name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="nick_name" id="nick_name"
+                                            placeholder="Nick name">
+                                        <div class="form-text">খুজে না পেলে ফাকা রাখুন</div>
+                                    </div>
                                 </div>
-                                <div class="col-lg-8 col-md-12 col-sm-12">
 
-                                    <table class="table table-striped ">
+                                <!-- Second Row -->
+                                <div class="row my-3">
+                                    <div class="col">
+                                        <input type="date" class="form-control" required name="dob" id="dob"
+                                            placeholder="Enter Date of Birth">
+                                        <div class="form-text">মাস - দিন - বছর ফর্মেটে (mm-dd-yyyy)</div>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" disabled name="age" id="age"
+                                            placeholder="00 years">
+                                        <div class="form-text">অটোমেটিক ক্যালকুলেশন হবে</div>
+                                    </div>
 
-                                        <tr>
-                                            <td scope="row"><strong>নাম</strong></strong></td>
-                                            <td>:</td>
-                                            <td>Sajjad Sunny</td>
-                                        </tr>
+                                    <div class="col">
+                                        <input type="text" class="form-control" disabled name="zodiac" id="zodiac"
+                                            placeholder="Birth Sign ">
+                                        <div class="form-text">অটো ফিলাপ হবে</div>
+                                    </div>
 
-                                        <tr>
-                                            <td><strong>ঠিকানা</strong></td>
-                                            <td>:</td>
-                                            <td>Baluchara Hathazari Road Chittagong</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td><strong>ইমেইল</strong></td>
-                                            <td>:</td>
-                                            <td>aouwalcmc@gmail.com</td>
-                                        </tr>
-
-
-                                        <tr>
-                                            <td><strong>বিকাশ নং</strong></td>
-                                            <td>:</td>
-                                            <td>01790007709</td>
-                                        </tr>
-
-                                        <tr>
-                                            <td><strong>নগদ নং</strong></td>
-                                            <td>:</td>
-                                            <td>01790007709</td>
-                                        </tr>
-                                        <tr class="">
-                                            <td><strong>ব্যাংক ডিটেইলস</strong></td>
-                                            <td>:</td>
-                                            <td>Branch - Baluchara Branch <br>
-                                                Bank Name - Prime Bank Limited <br>
-                                                Account No - 0213512485124 <br>
-                                                Account Holder - Shuvo Shaha
-                                            </td>
-                                        </tr>
-                                    </table>
-                                    <p class="text-muted">সর্বশেষ লগিন করেছেনঃ <span class="text-danger">12
-                                            September 2020</span> </p>
 
                                 </div>
 
-                            </div>
+                                <!-- Third Row -->
 
+                                <div class="row my-3">
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" required name="religion" id="religion"
+                                            placeholder="Religious Belief">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="cast" id="cast"
+                                            placeholder="Cast">
+
+                                        <div class="form-text text-center">না জানলে ফাকা রাখুন </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- fourth Row -->
+
+                                <div class="row my-3">
+
+                                    <div class="col autocomplete">
+                                        <input type="text" class="form-control" required name="country" id="country"
+                                            placeholder="country">
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="birth_place" id="birth_place"
+                                            placeholder="Birth Location">
+                                        <div class="form-text text-center">না জানলে ফাকা রাখুন </div>
+                                    </div>
+
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" name="grow_up" id="grow_up"
+                                            placeholder="Grow Up at">
+                                        <div class="form-text text-center">না জানলে ফাকা রাখুন </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" disabled name="nationality"
+                                            id="nationality" placeholder="Nationality">
+                                    </div>
+
+
+                                </div>
+
+                                <!-- fifth Row -->
+
+                                <div class="row my-3">
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" required name="height-cm" id="height-cm"
+                                            placeholder="height in cm">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" disabled name="height-meter"
+                                            id="height-meter" placeholder="height-meter">
+                                        <div class="form-text text-center">না জানলে ফাকা রাখুন </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" disabled name="height-feet"
+                                            id="height-feet" placeholder="height-feet">
+                                        <div class="form-text text-center">না জানলে ফাকা রাখুন </div>
+                                    </div>
+                                </div>
+
+
+                                <!-- sixth Row -->
+                                <div class="row my-3">
+
+                                    <div class="col">
+                                        <input type="text" class="form-control" required name="weight-kg" id="weight-kg"
+                                            placeholder="weight in KG">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" disabled name="weight-pound"
+                                            id="weight-pound" placeholder="weight pound">
+                                        <div class="form-text text-center">না জানলে ফাকা রাখুন </div>
+                                    </div>
+
+                                </div>
+
+
+
+
+
+
+
+
+                                <input type="submit" value="প্রিভিউ দেখুন" class="mb-3 btn btn-primary">
+                            </form>
                         </div>
 
                     </div>
 
+                    <div class="my-3 py-2"></div>
 
+                    <div class="container border p-3">
+                        <h2 class="h3 text-center mb-3">Your Recent Submissions</h2>
+
+
+
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th><i class="pe-3 fa-solid fa-paperclip"></i> url</th>
+                                    <th> <i class="pe-3 fa-solid fa-clock"></i>Submission Date</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>https://fontawesome.com/icons</td>
+                                    <td>01 September 2022, 11:01 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td>https://fontawesome.com/icons</td>
+                                    <td>01 September 2022, 11:01 PM</td>
+
+                                </tr>
+                                <tr>
+                                    <td>https://fontawesome.com/icons</td>
+                                    <td>01 September 2022, 11:01 PM</td>
+
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+                    </div>
 
 
                 </div>
@@ -216,11 +334,12 @@
 
 
 
-
+        <script src="assets/country.js"></script>
         <script src="assets/apps.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
             crossorigin="anonymous"></script>
+
 
 
 
